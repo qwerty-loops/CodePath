@@ -1,0 +1,73 @@
+/* Theme variables */
+
+:root {
+  /* # COMMON STYLES */
+  --cp-theme-link-color: #4252ff;
+  --cp-theme-tooltip-bg: #9acfea;
+  --cp-theme-tooltip-color: #245269;
+
+  /* # APP HEADER */
+  --cp-theme-app-header-bg: #f5f5f5;
+  --cp-theme-navbar-brand-color: #000;
+  --cp-theme-app-header-nav-link-color: #000;
+  --cp-theme-app-header-dropdown-toggle-active-bg: var(--bs-gray-300);
+  --cp-theme-app-header-dropdown-toggle-active-color: #000;
+  --cp-theme-app-header-dropdown-menu-link-active-bg: #1b1c57;
+  --cp-theme-role-switch-bg: var(--bs-warning-bg-subtle);
+  --cp-theme-role-switch-color: var(--cp-theme-app-header-nav-link-color);
+
+  /* # LEFT-HAND SIDE NAVIGATION SIDEBAR */
+  --cp-theme-sidebar-nav-color: #1b1c57;
+  --cp-theme-sidebar-nav-link-active-color: #fff;
+
+  /* # MAIN / SECTION CONTENT */
+  --cp-theme-section-content-border-color: #00c385;
+  --cp-theme-sections-nav-tabs-active-border-color: var(--cp-theme-section-content-border-color);
+  --cp-theme-sections-nav-tabs-color: #1b1c57;
+  --cp-theme-section-content-collapse-button-bg: #55deff;
+  --cp-theme-section-content-collapse-button-color: #000;
+  --cp-theme-section-content-collapse-button-hover-bg: #50ceef;
+  --cp-theme-section-content-submit-button-bg: #00c385;
+  --cp-theme-section-content-submit-button-color: #000;
+  --cp-theme-section-content-submit-button-hover-bg: #00c285;
+  --cp-theme-section-content-code-color: #1b1c57;
+
+  /* # ALERTS */
+  --cp-theme-alert-info-bg: #e9f6ff;
+  --cp-theme-alert-danger-bg: #ffedf0;
+  --cp-theme-alert-warning-bg: #fcf8e3;
+  --cp-theme-alert-success-bg: #d7ffee;
+
+  /* # OTHER */
+  --cp-theme-action-bar-icon-color: #1b1c57;
+  --cp-theme-card-header-action-link-color: #1b1c57;
+}
+
+/* Non-theme elements */
+
+.square-logo {
+  background-image: url("https://i.imgur.com/QKbfRZI.png");
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.h1, .h2, h1, h2 {
+  font-family: 'Space Mono', monospace;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6,
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom alerts */
+
+.alert-ai {
+  --bs-alert-bg: #f5eafc;
+}
+
+.alert-readiness {
+  --bs-alert-bg: #e5d4fa;
+}

@@ -1,0 +1,22 @@
+@media print {
+  @page {
+    size: auto;
+    margin: 5mm;
+  }
+  a.anchor,
+  div.action-bar,
+  .section-action {
+    display: none;
+  }
+  /* TODO: Figure out why do we need to hide all icons when printing
+  (some of them represent useful state, etc) */
+  .glyphicon, .bi {
+    display: none;
+  }
+  a[href]:after {
+    content: '' !important;
+  }
+  .panel {
+    border: 0;
+  }
+}
