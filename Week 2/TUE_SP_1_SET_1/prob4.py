@@ -1,12 +1,9 @@
 def identify_conflicts(venue1_schedule, venue2_schedule):
-    
-    conflicts={}
-
-    for artist,time in venue1_schedule.items():
-        if artist in venue2_schedule and venue2_schedule[artist]==time:
-            conflicts[artist] = time
-    
-    return conflicts
+    conf_schedule={}
+    for i,j in zip(venue1_schedule,venue2_schedule):
+        if i==j and venue1_schedule[i]==venue2_schedule[j]:
+            conf_schedule[i]=venue1_schedule[i]
+    return conf_schedule
 
 venue1_schedule = {
     "Stromae": "9:00 PM",

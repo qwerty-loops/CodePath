@@ -1,12 +1,13 @@
 def get_artist_info(artist, festival_schedule):
-    
+    # for i,v in festival_schedule.items():
+    #     if i == artist:
+    #         return v
+    #     else:
+    #         return "{'message': 'Artist not found'}"
+
     for i,v in enumerate(festival_schedule):
-        if v==artist:
-            return 1
-
-    # return festival_schedule.get(artist,{'message': 'Artist not found'})
-
-
+        if v == artist:
+            return festival_schedule[v]
 
 festival_schedule = {
     "Blood Orange": {"day": "Friday", "time": "9:00 PM", "stage": "Main Stage"},

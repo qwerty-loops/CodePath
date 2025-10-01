@@ -1,16 +1,15 @@
 def best_set(votes):
-    
-    hivote={}
-    for vote in votes.values():
-        if vote not in hivote:
-            hivote[vote]=1
+    count_vote={}
+    for i,v in votes.items():
+        if v not in count_vote:
+            count_vote[v]=1
         else:
-            hivote[vote]+=1
+            count_vote[v]+=1
+    max_vote = max(count_vote.values())
 
-    for artist,votes in hivote.items():
-        if max(hivote.values()) == votes:
-            return artist
-
+    for i,v in count_vote.items():
+        if v==max_vote:
+            return i
 
 votes1 = {
     1234: "SZA", 
